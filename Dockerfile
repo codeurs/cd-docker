@@ -6,5 +6,5 @@ RUN curl -sL https://sentry.io/get-cli/ | bash
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl \
     && chmod +x ./kubectl \
     && mv ./kubectl /usr/local/bin/kubectl
-RUN sudo apt-get update \
-    && sudo apt-get -y install rsync
+RUN apt-get update \
+    && apt-get -y install rsync
