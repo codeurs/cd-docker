@@ -7,4 +7,4 @@ RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s
     && chmod +x ./kubectl \
     && mv ./kubectl /usr/local/bin/kubectl
 RUN apt-get update \
-    && apt-get -y install rsync unzip openconnect
+    && apt-get -y install rsync unzip openconnect ocproxy
