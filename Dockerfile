@@ -1,4 +1,4 @@
-FROM node:10
+FROM node:12
 
 RUN npm i -g @codeurs/php-bin-linux64 ncp
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
